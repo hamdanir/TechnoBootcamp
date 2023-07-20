@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    let time = new Date();
+    console.log(time);
+
+    function timeConversion(time) {
+        const splitWaktu = time.split(':');
+        let jam = parseInt(splitWaktu[0]);
+        const menit = splitWaktu[1];
+        const detik = splitWaktu[2].substr(0, 2);
+        const meridian = splitWaktu[2].substr(2);
+
+        if(meridian === 'AM' && jam === 12){
+            jam = 0;
+        }else if(meridian === 'PM' && jam !== 12){
+            jam = jam + 12;
+        }
+        const jamTerformat = jam.toString().padStart(2, '0');
+        return `${jamTerformat}:${menit}:${detik}`;
+    }
+
+    console.log(timeConversion('12:01:00PM'));
+</script>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    var kata1 = "Alice";
+    var kata2 = "guru";
+    var kata3 = "25";
+    var kata4 = "3.000.000";
+    var a = `Alice adalah seorang guru berusia 25 tahun yang mencintai pekerjaannya.
+       Alice memiliki penghasilan sebesar 3.000.000 rupiah per bulannya.`;
+
+    document.writeln("<p>" + a + "</p>");
+    document.writeln(
+      "<p>" +
+        "<b>" +
+        kata1 +
+        "</b>" +
+        " " +
+        "adalah seorang" +
+        "<b>" +
+        " " +
+        kata3 +
+        "</b>" +
+        " " +
+        "berusia" +
+        "<b>" +
+        " " +
+        kata2 +
+        "</b>" +
+        " " +
+        "tahun yang mencintai pekerjaannya." +
+        " " +
+        "<b>" +
+        kata1 +
+        "</b>" +
+        " " +
+        "memiliki penghasilan sebesar" +
+        " " +
+        "<b>" +
+        kata4 +
+        "</b>" +
+        " " +
+        "rupiah per bulannya." +
+        "</p>"
+    );
+    var p = document.getElementsByTagName("p");
+    console.log(p);
+  </script>
+</html>

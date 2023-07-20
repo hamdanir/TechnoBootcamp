@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <!-- Buat variable person yang berisikan object dan memiliki npk, nama, alamat,  tanggal lahir, project, jumlah project, dan produktivitas di dalam object.  (isi value dari object tersebut tidak di tentukan, dan key harus sama sesuai dengan deskripsi) -->
+</body>
+<script>
+    let person = {
+        nim : 124190016,
+        nama : "Surya Aji Pratama",
+        alamat : "Yogyakarta",
+        tanggal_lahir : "26 Januari 2001",
+        project : "Project ABC",
+        jumlah_project : 10,
+        produktivitas : "Sukses produksi project"
+    }
+
+    person.nim = 124190017;
+    person.nama = "Surya Aji";
+    person.alamat = "Yogyakarta";
+    person.tanggal_lahir = "2001-01-26";
+    person.project = ["B2B ACCME", "Maintenace BJJ"];
+    person.jumlah_project = person['project'].length;
+    person.produktivitas =  [100, 100, 90];
+
+    person['project'].push("Setir Kanan Mobil", "Fixing CMS")
+    person['project'].splice(1,1);
+
+    person['produktivitas'][0] = 30/30*100
+    person['produktivitas'][1] = 25/30*100
+    person['produktivitas'][2] = 14/30*100
+
+    console.log(person);
+</script>
+</html>

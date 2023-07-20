@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    let nama = "Alice";
+    let profesi = "guru";
+    let usia = 25;
+    let gaji = 3000000;
+    let gajiTahun = gaji * 12;
+    let pajak = 0.1;
+    let pajakBulan = gaji * pajak;
+    let pajakTahun = gajiTahun * pajak;
+    let tabung = 0.2;
+    let tabungBulan = gaji * tabung;
+    let tabungTahun = gajiTahun * tabung;
+    document.writeln(`${nama} adalah seorang ${profesi} berusia ${usia} tahun yang mencintai pekerjaannya. Dia menghasilkan ${gaji} per bulan, yang berarti ${gajiTahun} rupiah per tahun. Dia membayar ${pajak * 100}% dari penghasilannya sebagai pajak, yaitu ${pajakBulan} rupiah per bulan atau ${pajakTahun} rupiah per tahun. Dia menabung ${0.2 * 100}% dari penghasilannya untuk rencana masa depannya, yaitu ${tabungBulan} rupiah per bulan atau ${tabungTahun} rupiah per tahun. Dia menghabiskan sisa penghasilannya untuk membayar sewa, tagihan, makanan, dan hobi.`)
+</script>
+
+</html>
